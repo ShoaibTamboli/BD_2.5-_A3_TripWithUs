@@ -305,7 +305,7 @@ app.get('/hotels/sort/reviews', (req, res) => {
     hotel.sort(reviewLeastToMost);
     return res.json({ hotels: hotel });
   }
-  if (review === 'most-to-least') {
+  if (reviews === 'most-to-least') {
     hotel.sort(reviewMostToLeast);
     return res.json({ hotels: hotel });
   }
